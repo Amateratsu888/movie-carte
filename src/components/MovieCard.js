@@ -1,4 +1,4 @@
-import { buildQueries } from "@testing-library/dom"
+
 import React, { useState } from "react"
 import { Rating, RatingView } from 'react-simple-star-rating'
 import {Link} from 'react-router-dom'
@@ -43,6 +43,7 @@ const MovieCard = () => {
                 title: '',
                 description: '',
                 postURL: '',
+                src:'',
                 rate: 0
 
             }
@@ -58,18 +59,21 @@ const MovieCard = () => {
     const urlHandler = (e) => {
         setValues({ ...values, postURL: e.target.value })
     }
-    const rateHandler = (e) => {
-        setValues({ ...values, rate: e.target.value })
+    const handleAddRating = (e) => {
+        setValues({ ...values, rate: e })
+    }
+    const youtubeHandler = (e) => {
+        setValues({ ...values, src: e.target.value })
     }
     const submitHandler = e=>{
         e.preventDefault()
-        addMovie(values.title,values.postURL,values.description,values.rate)
+        addMovie(values.title,values.postURL,values.description,values.rate,values.src)
     }
     
     
-    const addMovie = (title,postURL,description,rate) => {
+    const addMovie = (title,postURL,description,rate,src) => {
         
-            const newadd = [...movie,{title,description,postURL,rate}]
+            const newadd = [...movie,{title,description,postURL,rate,src}]
             setMovie(newadd)
         
        
@@ -206,6 +210,7 @@ const MovieCard = () => {
                                                             data-error="Title is required." />
                                                     </div>
                                                 </div>
+
                                                 <div className="col-md-6">
                                                     <div className="form-group">
                                                         <label htmlFor="form_lastname">PostURL *</label>
@@ -216,6 +221,19 @@ const MovieCard = () => {
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div className="col-md-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="form_lastname">YoutubeURL *</label>
+                                                        <input value={values.src} onChange={youtubeHandler}
+                                                            type="text"
+                                                            className="form-control" placeholder="Please enter your youtube url *"
+                                                            required="required" data-error="youtube url is required." />
+                                                    </div>
+                                                </div>
+
+                                                <Rating onClick={handleAddRating} ratingValue={values.rate}  />
+                                            
 
                                             <div className="row">
                                                 <div className="col-md-12">
@@ -240,6 +258,7 @@ const MovieCard = () => {
                     </div>
                 </div>
             </div>
+        
         </>
     )
 }
