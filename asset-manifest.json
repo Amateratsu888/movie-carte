@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Amateratsu888/movie-carte/static/css/main.6ad1792a.chunk.css",
+    "main.js": "/Amateratsu888/movie-carte/static/js/main.965303c5.chunk.js",
+    "main.js.map": "/Amateratsu888/movie-carte/static/js/main.965303c5.chunk.js.map",
+    "runtime-main.js": "/Amateratsu888/movie-carte/static/js/runtime-main.d2299498.js",
+    "runtime-main.js.map": "/Amateratsu888/movie-carte/static/js/runtime-main.d2299498.js.map",
+    "static/css/2.f2512455.chunk.css": "/Amateratsu888/movie-carte/static/css/2.f2512455.chunk.css",
+    "static/js/2.67117c71.chunk.js": "/Amateratsu888/movie-carte/static/js/2.67117c71.chunk.js",
+    "static/js/2.67117c71.chunk.js.map": "/Amateratsu888/movie-carte/static/js/2.67117c71.chunk.js.map",
+    "static/js/3.9e59bbe8.chunk.js": "/Amateratsu888/movie-carte/static/js/3.9e59bbe8.chunk.js",
+    "static/js/3.9e59bbe8.chunk.js.map": "/Amateratsu888/movie-carte/static/js/3.9e59bbe8.chunk.js.map",
+    "index.html": "/Amateratsu888/movie-carte/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/Amateratsu888/movie-carte/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.6ad1792a.chunk.css.map": "/Amateratsu888/movie-carte/static/css/main.6ad1792a.chunk.css.map",
+    "static/js/2.67117c71.chunk.js.LICENSE.txt": "/Amateratsu888/movie-carte/static/js/2.67117c71.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2299498.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.67117c71.chunk.js",
+    "static/css/main.6ad1792a.chunk.css",
+    "static/js/main.965303c5.chunk.js"
+  ]
+}
